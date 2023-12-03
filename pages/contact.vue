@@ -1,8 +1,8 @@
 <template>
   <Hero>
-    Magical Offerings
+    Say Hi, I Won't Bite
   </Hero>
-  <SectionsServices/>
+  <SectionsContact/>
 </template>
 
 <script setup>
