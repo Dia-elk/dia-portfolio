@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
     app: {
         head: {
+            link:[ { rel: 'icon', type: 'image/x-icon', href: '/images/favicon.png' }],
             script:[
                 {
                     src:'https://www.googletagmanager.com/gtag/js?id=G-0MK9PSE6HZ',
