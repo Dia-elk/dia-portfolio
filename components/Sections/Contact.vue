@@ -118,7 +118,7 @@ function onSubmitSuccess() {
 
 function submitForm() {
   isLoading.value = true;
-  axios.post('http://seo.diaelk.dev/api/contact-me', {
+  axios.post('https://seo.diaelk.dev/api/contact-me', {
     name: name.value,
     email: email.value,
     typeOfProject: typeOfProject.value,
