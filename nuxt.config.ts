@@ -6,5 +6,10 @@ export default defineNuxtConfig({
     devtools: {enabled: false},
     modules: [
         '@nuxtjs/tailwindcss',
+        'nuxt-simple-sitemap',
     ],
+    sitemap: {
+        urls: ['/','/about','/services','/contact'],
+        excludeAppSources:true,
+    },
 })
