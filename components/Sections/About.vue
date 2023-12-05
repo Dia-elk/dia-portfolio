@@ -16,7 +16,7 @@
       </p>
       <div class="mt-10 flex flex-col sm:flex-row gap-4 items-center">
 
-        <NuxtLink href="/contact" >
+        <NuxtLink href="/contact">
           <Button >Ready to Laugh and Code?</Button>
         </NuxtLink>
 
@@ -55,7 +55,7 @@
       <!-- End of Variables name and skills  -->
 
 
-      <img class="md:h-[200px] lg:h-[400px]" src="/images/php.png">
+      <img class="md:h-[200px] lg:h-[400px]" src="/images/php.png" alt="php code that describe information of Dia El keantaoui">
 
     </div>
     <!-- end of picture  -->

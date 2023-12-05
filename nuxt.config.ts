@@ -2,27 +2,27 @@
 export default defineNuxtConfig({
     app: {
         head: {
-            link:[ { rel: 'icon', type: 'image/x-icon', href: '/images/favicon.png' }],
-            script:[
+            link: [{rel: 'icon', type: 'image/x-icon', href: '/images/favicon.png'}],
+            script: [
                 {
-                    src:'https://www.googletagmanager.com/gtag/js?id=G-0MK9PSE6HZ',
+                    src: 'https://www.googletagmanager.com/gtag/js?id=G-0MK9PSE6HZ',
                 },
                 {
 
-                    src:'/js/tawk.js',
+                    src: '/js/tawk.js',
                 },
                 {
-                    async:true,
-                    src:'https://www.googletagmanager.com/gtag/js?id=G-0MK9PSE6HZ',
+                    async: true,
+                    src: 'https://www.googletagmanager.com/gtag/js?id=G-0MK9PSE6HZ',
                 },
                 {
-                    src:'/js/google-analytics.js',
+                    src: '/js/google-analytics.js',
                 }
             ],
-            meta:[
+            meta: [
                 {
-                    name:'google-site-verification',
-                    content:'DzP2i-arcWQ74Be-AaoAS0h4ic1xwU6xWZSj_jh5OKQ',
+                    name: 'google-site-verification',
+                    content: 'DzP2i-arcWQ74Be-AaoAS0h4ic1xwU6xWZSj_jh5OKQ',
                 }
             ],
         },
@@ -34,10 +34,11 @@ export default defineNuxtConfig({
     modules: [
         '@nuxt/ui',
         '@nuxtjs/tailwindcss',
+        '@nuxtjs/robots',
         'nuxt-simple-sitemap',
     ],
     sitemap: {
-        urls: ['/','/about','/services','/contact'],
-        excludeAppSources:true,
+        urls: ['/', '/about', '/services', '/contact'],
+        excludeAppSources: true,
     },
 })
