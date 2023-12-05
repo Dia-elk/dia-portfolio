@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+
     app: {
         head: {
+            htmlAttrs:{
+                lang:'en'
+            },
             link: [{rel: 'icon', type: 'image/x-icon', href: '/images/favicon.png'}],
             script: [
                 {
@@ -20,6 +24,8 @@ export default defineNuxtConfig({
                 }
             ],
             meta: [
+                { charset: 'utf-8' },
+                { name: 'viewport', content: 'width=device-width, initial-scale=1' },
                 {
                     name: 'google-site-verification',
                     content: 'DzP2i-arcWQ74Be-AaoAS0h4ic1xwU6xWZSj_jh5OKQ',
