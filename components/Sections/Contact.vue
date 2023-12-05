@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen flex px-4 sm:px-6 flex-col justify-center mt-16 md:mt-20 relative">
+  <div class="h-screen flex px-4 sm:px-6 flex-col justify-center mt-16 md:mt-20 relative text-gray-900">
     <!-- title  -->
     <h1 class="text-neutral-800 text-xl sm:text-2xl font-bold tracking-wide">
       Drop Me a Line: <br>
@@ -81,6 +81,8 @@ import axios from "axios";
 import Spinner from "~/components/Spinner.vue";
 
 
+let toast = useToast()
+
 let name = ref("");
 let email = ref("");
 let typeOfProject = ref("");
@@ -106,13 +108,11 @@ function toggleShowMsg() {
 }
 
 function onSubmitSuccess() {
-  toggleShowMsg();
   name.value = "";
   email.value = "";
   typeOfProject.value = "";
   budget.value = "";
   details.value = "";
-  setTimeout(toggleShowMsg, 1000)
 }
 
 
@@ -127,8 +127,10 @@ function submitForm() {
   }).then(res => {
     isLoading.value = false;
     onSubmitSuccess();
+    toast.add({ title: 'Email Sent' ,description:'Your message has been Sent successfully',icon:'i-heroicons-check-circle'});
   }).catch(error => {
     isLoading.value = false;
+    toast.add({ title: 'Oops!' ,description:'Please try again later',color:'red',icon:'i-heroicons-exclamation-circle'});
   });
 
 }

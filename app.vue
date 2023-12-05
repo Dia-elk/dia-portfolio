@@ -1,8 +1,13 @@
 <template>
-  <div class="bg-neutral-100 font-body">
+  <div class="bg-neutral-100  font-body">
     <NuxtLayout>
-      <NuxtPage/>
+
+      <UContainer>
+        <NuxtPage />
+      </UContainer>
+      <UNotifications/>
     </NuxtLayout>
+
   </div>
 </template>
 <script setup >

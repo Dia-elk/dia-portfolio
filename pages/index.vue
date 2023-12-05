@@ -6,6 +6,8 @@
 </template>
 
 <script setup>
+
+
 useHead({
   title: "Dia El keantaoui",
   meta: [
