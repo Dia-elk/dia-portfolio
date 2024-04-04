@@ -2,7 +2,9 @@
   <!-- Desktop Nav -->
   <div class="h-[80px] w-full px-12 sm:px-8 flex justify-between items-center">
     <!-- Logo -->
-    <Logo/>
+   <NuxtLink to="/">
+     <Logo/>
+   </NuxtLink>
     <!-- NavItems -->
     <NavMenu/>
     <!-- Social Media -->
